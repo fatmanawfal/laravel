@@ -26,5 +26,3 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
-
-Route::get('/cars', Cars::class)-> name('cars');
