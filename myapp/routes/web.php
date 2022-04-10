@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Livewire\Cars;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,3 +27,6 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+//car page
+Route::get('/car', Cars::class);
